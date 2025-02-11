@@ -1,3 +1,4 @@
-console.log('going through it')
-
 import './styles.css'
+import { renderAbout } from './tabAbout'
+
+renderAbout()
