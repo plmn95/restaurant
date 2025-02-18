@@ -178,22 +178,28 @@ footer {
 /* START OF MENU PAGE */
 
 .menu-container {
-    padding-right: 32px;
-    width: 100%;
+    padding: 38px;
     display: grid;
-    grid-template: 1fr 1fr / 1fr;
+    grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
 }
 
-.items-row {
+.row-first, .row-second {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.row-second {
     justify-content: space-around;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .menu-item {
     border-style: solid;
     display: flex;
     flex-direction: column;
+    max-width: 200px
 }
 
 .menu-item-info {

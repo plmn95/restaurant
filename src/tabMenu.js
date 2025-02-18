@@ -46,15 +46,23 @@ const menuItems = [sushi, oysters, shrimps, bao, mystery]
 const menuContainer = document.createElement('div')
 menuContainer.classList.add('menu-container')
 
-menuItems.forEach(item => {
+const rowFirst = document.createElement('div')
+rowFirst.classList.add('row-first')
+
+const rowSecond = document.createElement('div')
+rowSecond.classList.add('row-second')
+
+menuContainer.append(rowFirst, rowSecond)
+
+menuItems.slice(0, 3).forEach(item => {
     const menuElement = createMenuItem(item)
-    menuContainer.append(menuElement)
+    rowFirst.append(menuElement)
 })
 
-
-// itemsRow1.append(itemSushi, itemOysters, itemShrimps)
-
-// itemsRow2.append(itemBao, itemRandom)
+menuItems.slice(3).forEach(item => {
+    const menuElement = createMenuItem(item)
+    rowSecond.append(menuElement)
+})
 
 function appendMenu() {
     const container = document.getElementById('content')
