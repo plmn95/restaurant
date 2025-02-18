@@ -190,16 +190,14 @@ footer {
 }
 
 .row-second {
-    justify-content: space-around;
-    padding-left: 300px;
-    padding-right: 300px;
+    justify-content: space-evenly;
 }
 
 .menu-item {
     border-style: solid;
     display: flex;
     flex-direction: column;
-    max-width: 200px
+    max-width: 400px
 }
 
 .menu-item-info {
