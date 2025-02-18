@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
 .menu {
     display: flex;
     padding-left: 2rem;
@@ -22,11 +30,17 @@ body {
     padding-left: 88px;
 }
 
+.menu li:first-child {
+    text-decoration: underline;
+}
+
 .divHeader {
     padding-left: 2rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
+
+/* START OF ABOUT PAGE */
 
 .title {
     font-family: 'Kalnia', serif;
@@ -99,6 +113,93 @@ body {
     color: white;
 }
 
-hr {
-    margin-bottom: 10rem;
+footer {
+    background-color: #D7E2BA;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+    padding: 50px;
 }
+
+.footer-links {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-links li {
+    list-style-type: none;
+    font-family: 'Space Grotesk', serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.copyright p {
+    margin: 0;
+    font-family: 'Space Grotesk', serif;
+    text-align: right;
+}
+
+.copyright p:first-child {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.copyright p:last-child {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+.social-links img:last-of-type {
+    margin-left: 4px;
+}
+
+/* START OF MENU PAGE */
+
+.menu-container {
+    padding-right: 32px;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    gap: 3rem;
+}
+
+.items-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
