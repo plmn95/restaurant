@@ -1,6 +1,7 @@
 import './styles.css'
 import appendAbout from './tabAbout'
 import appendMenu from './tabMenu'
+import appendReservation from './tabReserve'
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuController = (function() {
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         break
                     case 'btnReserve':
                         button.style.textDecoration = 'underline'
+                        appendReservation()
                         break
                 }
             })

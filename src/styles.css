@@ -207,3 +207,62 @@ footer {
     padding-right: 1rem;
 }
 
+.div-message {
+    margin-bottom: 80px;
+}
+
+.message {
+    margin-left: auto;
+    margin-right: 4rem;
+    text-align: right;
+    font-family: 'Space Grotesk', serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* START OF RESERVATION PAGE */
+
+.reservation {
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.form-reservation {
+    display: grid;
+    grid-template: 1fr 0.5fr 0.5fr 0.5fr 2fr / 1fr 1fr;
+    padding: 5%;
+    font-family: 'Space Grotesk', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form-message {
+    grid-column: 1 / 3;
+}
+
+.form-reservation input:not(:last-child) {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #410257;
+    width: 80%;
+    height: 30%;
+    font-family: 'Space Grotesk', serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.btn-submit {
+    grid-column: 2 / 3;
+    border: 1p solid #000;
+    border-radius: 66px;
+    background-color: #410257;
+    font-family: 'Space Grotesk', serif;
+    font-weight: 500;
+    font-size: 34px;
+    color: white;
+    height: 28%;
+    width: 302px;
+    align-self: end;
+}

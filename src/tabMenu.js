@@ -64,9 +64,16 @@ menuItems.slice(3).forEach(item => {
     rowSecond.append(menuElement)
 })
 
+const divMessage = document.createElement('div')
+divMessage.classList.add('div-message')
+const message = document.createElement('p')
+message.classList.add('message')
+message.innerText = '*Menu items rotate on a monthly basis'
+divMessage.append(message)
+
 function appendMenu() {
     const container = document.getElementById('content')
-    container.appendChild(menuContainer)
+    container.append(menuContainer, divMessage)
 }
 
 export default appendMenu
